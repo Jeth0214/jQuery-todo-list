@@ -27,6 +27,7 @@ h1 {
 
 .fa-plus {
     float: right;
+    cursor: pointer;
 }
 input {
     display: none;
