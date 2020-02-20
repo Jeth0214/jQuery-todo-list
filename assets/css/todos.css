@@ -7,7 +7,7 @@ body {
 }
 
 #container {
-    width: 360px;
+    max-width: 360px;
     margin: 100px auto;
     background-color: #f7f7f7;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -29,6 +29,7 @@ h1 {
     float: right;
 }
 input {
+    display: none;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

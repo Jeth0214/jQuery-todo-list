@@ -22,6 +22,11 @@ $("input[type='text']").keypress(function(event){
         $(this).val("");
 
         //create a new li and add to ul
-        $("ul").append("<li><span>X</span> " + newTodo + "</li>");
+        $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + newTodo + "</li>");
     }
+});
+
+//fade toggle when Plus icon was clicked
+$(".fa-plus").on("click", function(){
+    $("input[type='text']").fadeToggle();
 })
