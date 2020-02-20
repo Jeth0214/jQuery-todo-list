@@ -1,5 +1,9 @@
 body {
     font-family: Roboto;
+    background: #2BC0E4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #container {
@@ -21,6 +25,9 @@ h1 {
     padding: 10px 20px;
 }
 
+.fa-plus {
+    float: right;
+}
 input {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -30,7 +37,7 @@ input {
     background-color: #f7f7f7;
     color: #2980b9;
     padding: 13px 13px 13px 20px;
-    
+    border: 3px solid rgba(0,0,0,0);
 }
 
 input:focus{
@@ -54,6 +61,23 @@ li {
 
 li:nth-child(2n){
     background-color: #f7f7f7;
+}
+
+span {
+    background-color: red;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    width: 0;
+    opacity: 0;
+    display: inline-block;
+    margin-right: 20px;
+    transition: 0.2s linear;
+}
+
+li:hover span{
+    width: 40px;
+    opacity: 1.0;
 }
 .completed {
     color: gray;
